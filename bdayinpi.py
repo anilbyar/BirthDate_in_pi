@@ -11,10 +11,12 @@ class FindBirthdateInPi:
         while True:
             try:
                 self.birth_date = str(int(input(ask)))
-                if len(self.birth_date) == 4:
+                if len(self.birth_date) == 4 and int(self.birth_date[0:2]) <= 32 and int(self.birth_date[2:4]) <= 12:
                     break
-                else:
+                elif len(self.birth_date) != 4:
                     ask = "Please Enter your birthdate in valid format (DDMM): "
+                else:
+                    ask = "Please Enter a valid date: "
             except ValueError:
                 ask = "Please Enter your birthdate in valid format (DDMM): "
         print("*" * (len(ask) + 4))
