@@ -1,6 +1,5 @@
 from bdayinpi import *
 
-
 while True:
     # Create an object of date finder
     birthday = FindBirthdateInPi()
