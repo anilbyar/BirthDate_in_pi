@@ -4,7 +4,7 @@ class FindBirthdateInPi:
     pi_string: str = file.readline()
     file.close()
 
-    # Get inout of birthdate
+    # Get input of birthdate
     def __init__(self):
         ask = "Enter your birthdate (DDMM): "
         print("*" * (len(ask) + 4))
